@@ -60,7 +60,7 @@ void Lattice::randBasis()
 		}
 		else
 		{
-			val = rand() % RANDOMNESS_LIMIT;
+			val = (rand() % RANDOMNESS_LIMIT) + 1;
 			for(int j = 0; j < cols; ++j)
 				B[pos1][j] = B[pos1][j] + (val * B[pos2][j]);
 		}
