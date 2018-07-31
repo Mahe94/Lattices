@@ -12,10 +12,10 @@ int main(){
 	L.createBasis();
 	L.printBasis();
 	
-	cout<<endl;
-	L.randBasis();
+	//cout<<endl;
+	//L.randBasis();
 	
-	L.printBasis();
+	//L.printBasis();
 	cout<<endl;
 	
 	for(int i = 0; i < m; ++i)
@@ -34,7 +34,7 @@ int main(){
 	
 	mpz_class numerator, denominator;
 	numerator = "4";
-	denominator = "2";
+	denominator = "3";
 	mpq_class val;
 	val = mpq_class (numerator , denominator);
 	

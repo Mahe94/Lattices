@@ -39,9 +39,16 @@ void Lattice::createBasis()
 {
 	for(int i = 0; i < rows; ++i)
 	{
-		for(int j = i; j < cols; ++j)
+		for(int j = 0; j < cols; ++j)
 		{
-			B[i][j] = (rand() % RANDOMNESS_LIMIT) + 1;
+			if(j == 0) {
+				B[i][j] = (rand() % RANDOMNESS_LIMIT) + 1;
+			}
+			else
+			{
+				if(i == j)
+					B[i][j] = 1;
+			}
 		}	
 	}
 }

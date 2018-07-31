@@ -145,10 +145,10 @@ void gso(mpz_class B[][MAXSIZE], mpq_class G[][MAXSIZE], int n, int m)
 			
 			den = 1/den;
 			
-			proj = num + den;
+			proj = num * den;
 			ratmult(G[k], proj, temp, m);
 			
-			subvector(G[i], G[k], G[i], m);
+			subvector(G[i], temp, G[i], m);
 		}
 	}
 }
