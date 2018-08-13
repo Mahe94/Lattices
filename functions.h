@@ -52,4 +52,6 @@ void print(mpz_class M[][MAXSIZE], int n, int m);
 void print(mpq_class M[][MAXSIZE], int n, int m);
 void print(mpf_class M[][MAXSIZE], int n, int m);
 
+void swap(mpz_class v[], mpz_class u[], int m);
+
 #endif

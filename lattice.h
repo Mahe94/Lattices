@@ -8,9 +8,9 @@
 #include <gmpxx.h>
 
 #define SEED 0
-#define MAXSIZE 20
+#define MAXSIZE 40
 #define RANDOMNESS 20
-#define RANDOMNESS_LIMIT 50
+#define RANDOMNESS_LIMIT 500000
 
 using namespace std;
 

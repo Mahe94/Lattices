@@ -324,3 +324,14 @@ void print(mpf_class M[][MAXSIZE], int n, int m)
 		cout<<endl;
 	}
 }
+
+void swap(mpz_class v[], mpz_class u[], int m)
+{
+	mpz_class temp;
+	for(int i = 0; i < m; ++i)
+	{
+		temp = v[i];
+		v[i] = u[i];
+		u[i] = temp;
+	}
+}
